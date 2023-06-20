@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Update = () => {
 
@@ -24,6 +24,7 @@ const Update = () => {
         console.log(data)
         if (data.matchedCount > 0) {
             alert('user updated successfully')
+            
         }
        })
 
@@ -41,6 +42,8 @@ const Update = () => {
                 <br />
                 <input type="submit" value="Update" />
             </form>
+
+            <Link to='/users'>Users</Link>
         </div>
     );
 };

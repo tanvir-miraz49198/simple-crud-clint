@@ -1,5 +1,5 @@
 
-import { json } from 'react-router-dom';
+import { Link, json } from 'react-router-dom';
 import './App.css'
 
 
@@ -43,6 +43,8 @@ function App() {
         <br />
         <input type="submit" value="Submit" />
       </form>
+
+      <Link to='/users'>Users</Link>
     </>
   )
 }

@@ -30,6 +30,8 @@ const Users = () => {
                      <button onClick={() => handleDelete(user._id)}>X</button></p>)
                 }
             </div>
+
+            <Link to='/'>Home</Link>
         </div>
     );
 };
